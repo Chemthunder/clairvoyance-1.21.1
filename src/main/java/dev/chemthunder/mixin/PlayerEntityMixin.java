@@ -16,7 +16,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     }
 
     @ModifyReturnValue(method = "getDisplayName", at = @At("RETURN"))
-    private Text gilded$maskName(Text original) {
-        return Text.literal("wtf");
+    private Text clairvoyance$maskName(Text original) {
+        return Text.translatable("name.mask").withColor(0x481b52);
     }
 }

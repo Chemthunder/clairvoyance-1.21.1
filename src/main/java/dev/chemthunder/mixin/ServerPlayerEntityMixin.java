@@ -24,7 +24,7 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     private void replaceNameOnTabList(CallbackInfoReturnable<Text> cir) {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(ClairItems.TEST_MASK)) {
-            cir.setReturnValue(Text.literal("wtf"));
+            cir.setReturnValue(Text.translatable("name.mask").withColor(0x481b52));
         }
     }
 }

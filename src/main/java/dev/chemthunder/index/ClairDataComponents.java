@@ -1,6 +1,5 @@
 package dev.chemthunder.index;
 
-import com.mojang.serialization.Codec;
 import dev.chemthunder.Clairvoyance;
 import net.minecraft.component.ComponentType;
 import net.minecraft.registry.Registries;
