@@ -1,37 +1,40 @@
 {
-	"schemaVersion": 1,
-	"id": "clairvoyance",
-	"version": "${version}",
-	"name": "Clairvoyance",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/clairvoyance/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-          "dev.chemthunder.Clairvoyance"
-		],
-		"fabric-datagen": [
-          "dev.chemthunder.ClairvoyanceDataGenerator"
-		]
-	},
-	"mixins": [
-		"clairvoyance.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "clairvoyance",
+  "version": "${version}",
+  "name": "Clairvoyance",
+  "description": "How Spooky Dooky!",
+  "authors": [
+    "Chemthunder"
+  ],
+  "contributors": [
+    "AcoYT"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/clairvoyance/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.chemthunder.Clairvoyance"
+    ],
+    "fabric-datagen": [
+      "dev.chemthunder.ClairvoyanceDataGenerator"
+    ]
+  },
+  "mixins": [
+    "clairvoyance.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }

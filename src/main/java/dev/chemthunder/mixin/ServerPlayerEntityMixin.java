@@ -7,6 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,7 +25,7 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     private void replaceNameOnTabList(CallbackInfoReturnable<Text> cir) {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(ClairItems.TEST_MASK)) {
-            cir.setReturnValue(Text.translatable("name.mask").withColor(0x481b52));
+            cir.setReturnValue(Text.translatable("name.mask").withColor(0x481b52).formatted(Formatting.ITALIC));
         }
     }
 }

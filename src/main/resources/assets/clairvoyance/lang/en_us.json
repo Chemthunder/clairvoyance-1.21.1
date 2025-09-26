@@ -3,5 +3,8 @@
 
   "text.waypoint.set": "Placed a casting stone at ",
 
-  "item.clairvoyance.calling_stone": "Calling Stone"
+  "item.clairvoyance.calling_stone": "Calling Stone",
+
+  "name.mask": "Obscured",
+  "item.clairvoyance.cursed_mask": "Cursed Mask"
 }

@@ -36,7 +36,7 @@ public interface ClairItems {
             .maxCount(1)
     ));
 
-    Item TEST_MASK = create("test_mask", new DemonsMaskItem(ArmorMaterials.CHAIN, ArmorItem.Type.HELMET, new AcornItemSettings()
+    Item TEST_MASK = create("cursed_mask", new DemonsMaskItem(ClairArmorMaterials.ACCURSED, ArmorItem.Type.HELMET, new AcornItemSettings()
             .maxCount(1)
     ));
 
@@ -46,6 +46,7 @@ public interface ClairItems {
        ITEMS.keySet().forEach(item -> Registry.register(Registries.ITEM, ITEMS.get(item), item));
 
        modifyItemNameColor(SPECTRAL_MIRROR, 0x1c1c21);
+       modifyItemNameColor(TEST_MASK, 0x9e1830);
     }
 
 

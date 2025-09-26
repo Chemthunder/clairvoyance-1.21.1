@@ -36,20 +36,20 @@ public class Clairvoyance implements ModInitializer {
         ClairStatusEffects.init();
 
 
-        ServerEntityEvents.EQUIPMENT_CHANGE.register((entity, slot, previous, next) -> {
-            if (entity instanceof ServerPlayerEntity player) {
-                ServerPlayNetworkHandler handler = player.networkHandler;
-                if (handler != null) {
-                    MinecraftServer server = player.getServer();
-                    if (server != null) {
-                        ServerPlayerEntity playerEntity = server.getPlayerManager().getPlayer(player.getUuid());
-                        if (playerEntity != null) {
-                            server.getPlayerManager().sendToAll(new PlayerListS2CPacket(PlayerListS2CPacket.Action.UPDATE_DISPLAY_NAME, playerEntity));
+            ServerEntityEvents.EQUIPMENT_CHANGE.register((entity, slot, previous, next) -> {
+                if (entity instanceof ServerPlayerEntity player && (next.isOf(ClairItems.TEST_MASK) || previous.isOf(ClairItems.TEST_MASK))) {
+                    ServerPlayNetworkHandler handler = player.networkHandler;
+                    if (handler != null) {
+                        MinecraftServer server = player.getServer();
+                        if (server != null) {
+                            ServerPlayerEntity playerEntity = server.getPlayerManager().getPlayer(player.getUuid());
+                            if (playerEntity != null) {
+                                server.getPlayerManager().sendToAll(new PlayerListS2CPacket(PlayerListS2CPacket.Action.UPDATE_DISPLAY_NAME, playerEntity));
+                            }
                         }
                     }
                 }
-            }
-        });
+            });
 
 
 		LOGGER.info("Hello Fabric world!");
