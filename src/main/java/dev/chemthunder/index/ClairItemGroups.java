@@ -15,7 +15,7 @@ import net.minecraft.text.Text;
 public interface ClairItemGroups {
     RegistryKey<ItemGroup> GROUP_KEY = RegistryKey.of(RegistryKeys.ITEM_GROUP, Clairvoyance.id("clairvoyance"));
     ItemGroup ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(ClairItems.SPECTRAL_MIRROR))
+            .icon(() -> new ItemStack(ClairItems.CASTING_STONE))
             .displayName(Text.translatable("itemGroup.clairvoyance").styled(style -> style.withColor(0x354b66)))
             .build();
 
@@ -27,5 +27,13 @@ public interface ClairItemGroups {
 
     private static void addEntries(FabricItemGroupEntries itemGroup) {
         itemGroup.add(ClairItems.SPECTRAL_MIRROR);
+        itemGroup.add(ClairItems.TEST_MASK);
+        itemGroup.add(ClairItems.CASTING_STONE);
+
+        itemGroup.add(ClairItems.EFFIGY_VESSEL);
+        itemGroup.add(ClairItems.ABSTINENT_EFFIGY);
+        itemGroup.add(ClairItems.CHIPPED_EFFIGY);
+        itemGroup.add(ClairItems.ENGRAVED_EFFIGY);
+        itemGroup.add(ClairItems.SOUL_BOTTLE);
     }
 }

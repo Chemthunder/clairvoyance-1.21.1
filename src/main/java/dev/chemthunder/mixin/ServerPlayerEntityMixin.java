@@ -1,8 +1,10 @@
 package dev.chemthunder.mixin;
 
 import com.mojang.authlib.GameProfile;
+import dev.chemthunder.index.ClairEnchantments;
 import dev.chemthunder.index.ClairItems;
 import dev.chemthunder.item.DemonsMaskItem;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -25,7 +27,9 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     private void replaceNameOnTabList(CallbackInfoReturnable<Text> cir) {
         ServerPlayerEntity player = (ServerPlayerEntity)(Object)this;
         if (player.getEquippedStack(EquipmentSlot.HEAD).isOf(ClairItems.TEST_MASK)) {
-            cir.setReturnValue(Text.translatable("name.mask").withColor(0x481b52).formatted(Formatting.ITALIC));
+            if (EnchantmentHelper.hasAnyEnchantmentsWith(player.getEquippedStack(EquipmentSlot.HEAD), ClairEnchantments.OBSCURE)) {
+                cir.setReturnValue(Text.translatable("name.mask").withColor(0x481b52).formatted(Formatting.ITALIC));
+            }
         }
     }
 }

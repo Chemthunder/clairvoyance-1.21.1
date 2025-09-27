@@ -17,14 +17,18 @@ public class Poltergeist extends StatusEffect {
 
     @Override
     public void onApplied(LivingEntity entity, int amplifier) {
-        entity.isInvisible();
+        entity.setInvisible(true);
 
         super.onApplied(entity, amplifier);
     }
 
     @Override
-    public void onRemoved(AttributeContainer attributeContainer) {
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
+        return super.applyUpdateEffect(entity, amplifier);
+    }
 
+    @Override
+    public void onRemoved(AttributeContainer attributeContainer) {
         super.onRemoved(attributeContainer);
     }
 

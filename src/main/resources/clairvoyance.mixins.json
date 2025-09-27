@@ -3,8 +3,10 @@
   "package": "dev.chemthunder.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "GlassBottleMixin",
     "PlayerEntityMixin",
-    "ServerPlayerEntityMixin"
+    "ServerPlayerEntityMixin",
+    "WindChargeMixin"
   ],
   "client": [
     "client.PlayerEntityRendererMixin"

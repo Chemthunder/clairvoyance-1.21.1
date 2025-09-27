@@ -1,9 +1,6 @@
 package dev.chemthunder;
 
-import dev.chemthunder.index.ClairDataComponents;
-import dev.chemthunder.index.ClairItemGroups;
-import dev.chemthunder.index.ClairItems;
-import dev.chemthunder.index.ClairStatusEffects;
+import dev.chemthunder.index.*;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
@@ -34,6 +31,7 @@ public class Clairvoyance implements ModInitializer {
         ClairItemGroups.init();
         ClairDataComponents.init();
         ClairStatusEffects.init();
+        ClairEnchantments.init();
 
 
             ServerEntityEvents.EQUIPMENT_CHANGE.register((entity, slot, previous, next) -> {

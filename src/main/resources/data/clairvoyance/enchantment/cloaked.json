@@ -1,0 +1,28 @@
+{
+  "description": {
+    "translate": "enchantment.clairvoyance.cloaked"
+  },
+  "exclusive_set": [],
+  "supported_items": [
+    "clairvoyance:cursed_mask"
+  ],
+  "primary_items": "clairvoyance:cursed_mask",
+  "weight": 100,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "clairvoyance:cloaked":{
+    }
+  }
+}

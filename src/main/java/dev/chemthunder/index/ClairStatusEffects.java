@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 
 public interface ClairStatusEffects {
-    RegistryEntry<StatusEffect> POLTERGEIST = create("fractured", new Poltergeist());
+    RegistryEntry<StatusEffect> POLTERGEIST = create("poltergeist", new Poltergeist());
 
 
 

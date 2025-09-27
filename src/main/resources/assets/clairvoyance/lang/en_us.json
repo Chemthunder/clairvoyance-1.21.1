@@ -6,5 +6,33 @@
   "item.clairvoyance.calling_stone": "Calling Stone",
 
   "name.mask": "Obscured",
-  "item.clairvoyance.cursed_mask": "Cursed Mask"
+  "item.clairvoyance.cursed_mask": "Cursed Mask",
+
+  "item.clairvoyance.casting_stone": "Casting Stone",
+
+  "item.clairvoyance.effigy_vessel": "Effigy Vessel",
+  "item.clairvoyance.abstinent_effigy": "Abstinent Effigy",
+  "item.clairvoyance.chipped_effigy": "Chipped Effigy",
+  "item.clairvoyance.engraved_effigy": "Engraved Effigy",
+
+  "itemGroup.clairvoyance": "Clairvoyance",
+
+  "item.clairvoyance.soul_bottle": "Soul Bottle",
+
+  "effect.clairvoyance.poltergeist": "Poltergeist",
+
+  "enchantment.clairvoyance.waypoint": "Waypoint",
+  "enchantment.clairvoyance.waypoint.desc": "Allows the Casting Stone to place a waypoint that can be teleported back to. Must be on the ground to place a waypoint.",
+
+  "enchantment.clairvoyance.obscure": "Obscure",
+  "enchantment.clairvoyance.obscure.desc": "Hides the player's name tag whilst wearing the Cursed Mask.",
+
+  "enchantment.clairvoyance.cloaked": "Cloaked",
+  "enchantment.clairvoyance.cloaked.desc": "Changes the user's skin to a pitch-black figure.",
+
+  "enchantment.clairvoyance.impersonate": "Impersonate",
+  "enchantment.clairvoyance.impersonate.desc": "If the Casting Stone is in the player's main hand and they are sneaking the player will turn invisible, re-appearing if the player is no longer sneaking.",
+
+  "enchantment.clairvoyance.materialize": "Materialize",
+  "enchantment.clairvoyance.materialize.desc": "Allows the creation and rapid spawning of various items. Fire Charges spawn fireballs and Wind Charges spawn wind charges."
 }
